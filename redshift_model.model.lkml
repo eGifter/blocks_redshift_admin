@@ -44,7 +44,7 @@ explore: redshift_tables {
 }
 
 explore: redshift_plan_steps {
-  hidden: yes
+  hidden: no
   persist_for: "0 seconds"
   join: redshift_tables {
     sql_on: ${redshift_tables.table}=${redshift_plan_steps.table} ;;
